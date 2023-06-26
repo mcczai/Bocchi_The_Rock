@@ -13,10 +13,13 @@ public class bocchitherock {
 
     public bocchitherock() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        ItemInit.register(bus);
-        CREATIVE_MODE_TABS.register(bus);
         MinecraftForge.EVENT_BUS.register(this);
-        modEventBus.addListener(this::addCreative);
+
+        ItemInit.ITEMS.register(bus);
+        BlockInit.BLOCKS.register(bus);
+        bocchitherockTab.CREATIVE_MODE_TABS.register(bus);
+
     }
-}
+
+    }
+

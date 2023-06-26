@@ -1,13 +1,13 @@
 package net.mcczai.bocchitherock.geo.guitar;
 
+import net.mcczai.bocchitherock.bocchitherock;
 import net.minecraft.resources.ResourceLocation;
-import software.bernie.geckolib.GeckoLib;
 import software.bernie.geckolib.model.GeoModel;
 
 public class GuitarModel extends GeoModel<GuitarItem> {
-    private static final ResourceLocation modelPath = new ResourceLocation(GeckoLib.MOD_ID,"geo/guitar.geo.json");
-    private static final ResourceLocation texturePath = new ResourceLocation(GeckoLib.MOD_ID,"textures/item/guitar.png");
-    private static final ResourceLocation animationPath = new ResourceLocation(GeckoLib.MOD_ID,"animations/guitar.animation.json");
+    private static final ResourceLocation modelPath = new ResourceLocation(bocchitherock.ID,"geo/guitar.geo.json");
+    private static final ResourceLocation texturePath = new ResourceLocation(bocchitherock.ID,"textures/item/guitar.png");
+    private static final ResourceLocation animationPath = new ResourceLocation(bocchitherock.ID,"animations/guitar.animation.json");
 
 
     public ResourceLocation getModelPath(GuitarModel animatable){return modelPath;}
