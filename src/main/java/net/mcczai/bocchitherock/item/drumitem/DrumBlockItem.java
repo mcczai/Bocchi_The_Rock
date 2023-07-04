@@ -1,6 +1,5 @@
-package net.mcczai.bocchitherock.item.custom;
+package net.mcczai.bocchitherock.item.drumitem;
 
-import net.mcczai.bocchitherock.item.client.drumitem.DrumItemRenderer;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
@@ -16,10 +15,10 @@ import software.bernie.geckolib.util.RenderUtils;
 
 import java.util.function.Consumer;
 
-public class AnimateBlockItem extends BlockItem implements GeoItem {
+public class DrumBlockItem extends BlockItem implements GeoItem {
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
-    public AnimateBlockItem(Block block, Properties properties) {
+    public DrumBlockItem(Block block, Properties properties) {
         super(block, properties);
         SingletonGeoAnimatable.registerSyncedAnimatable(this);
     }

@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.block.entity;
+package net.mcczai.bocchitherock.block.entity.client.drum;
 
 import net.mcczai.bocchitherock.registry.BlockEntities;
 import net.minecraft.core.BlockPos;
@@ -12,11 +12,11 @@ import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
 import software.bernie.geckolib.util.RenderUtils;
 
-public class AnimateBlockEntity extends BlockEntity implements GeoBlockEntity {
+public class DrumBlockEntity extends BlockEntity implements GeoBlockEntity {
 
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
-    public AnimateBlockEntity(BlockPos pos, BlockState state){
+    public DrumBlockEntity(BlockPos pos, BlockState state){
 
         super(BlockEntities.DRUM_ANIMATED_BLOCK_ENTITY.get(), pos ,state);
     }

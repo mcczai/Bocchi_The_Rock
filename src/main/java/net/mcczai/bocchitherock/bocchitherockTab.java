@@ -27,6 +27,10 @@ public class bocchitherockTab {
                     output.accept(ItemInit.TEST.get());
                     output.accept(ItemInit.MIDI_TEST_TOOL.get());
                     output.accept(BlockInit.DRUM_BLOCK.get());
+                    output.accept(ItemInit.GUITARDC.get());
+                    output.accept(ItemInit.GUITAR.get());
+                    output.accept(ItemInit.BASS.get());
+
 
                 }).build();
     }

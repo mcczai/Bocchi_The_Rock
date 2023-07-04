@@ -1,6 +1,6 @@
 package net.mcczai.bocchitherock.block.custom;
 
-import net.mcczai.bocchitherock.block.entity.AnimateBlockEntity;
+import net.mcczai.bocchitherock.block.entity.client.drum.DrumBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.RenderShape;
@@ -17,7 +17,7 @@ public class AnimateBlock extends BaseEntityBlock {
     @Override
     public BlockEntity newBlockEntity(BlockPos blockPos, BlockState state) {
 
-        return new AnimateBlockEntity(blockPos,state);
+        return new DrumBlockEntity(blockPos,state);
 
     }
 

@@ -1,6 +1,5 @@
 package net.mcczai.bocchitherock.block.entity.client.drum;
 
-import net.mcczai.bocchitherock.block.entity.AnimateBlockEntity;
 import net.mcczai.bocchitherock.registry.BlockEntities;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -8,7 +7,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import software.bernie.geckolib.renderer.GeoBlockRenderer;
 
 
-public class DrumRenderer extends GeoBlockRenderer<AnimateBlockEntity> {
+public class DrumRenderer extends GeoBlockRenderer<DrumBlockEntity> {
     public DrumRenderer(BlockEntityRendererProvider.Context context){
         super(new DrumModel());
     }
