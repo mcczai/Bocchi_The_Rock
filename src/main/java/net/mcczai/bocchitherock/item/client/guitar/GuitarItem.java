@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.geo.guitar;
+package net.mcczai.bocchitherock.item.client.guitar;
 
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.server.level.ServerLevel;
