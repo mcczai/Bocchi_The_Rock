@@ -1,7 +1,6 @@
 package net.mcczai.bocchitherock.entity.client.armor;
 
 import net.mcczai.bocchitherock.bocchitherock;
-import net.mcczai.bocchitherock.item.custom.TshirtArmorItem;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
 

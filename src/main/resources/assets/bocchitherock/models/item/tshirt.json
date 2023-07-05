@@ -1,6 +1,6 @@
 {
-  "parent": "item/generated",
+  "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "bocchitherock:item/armor/tshirt.png"
+    "layer0": "bocchitherock:item/tshirt"
   }
 }

@@ -10,7 +10,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class AnimateBlock extends BaseEntityBlock {
     public AnimateBlock(Properties properties){
-        super(properties);
+        super(properties.noOcclusion());
     }
 
     @Nullable

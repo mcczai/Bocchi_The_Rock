@@ -6,7 +6,7 @@ import net.mcczai.bocchitherock.item.fumo.ikuyo.IkuyoItem;
 import net.mcczai.bocchitherock.item.fumo.nijika.NijikaItem;
 import net.mcczai.bocchitherock.item.fumo.ruyo.RuyoItem;
 import net.mcczai.bocchitherock.item.instrument.bass.BassItem;
-import net.mcczai.bocchitherock.item.custom.TshirtArmorItem;
+import net.mcczai.bocchitherock.entity.client.armor.TshirtArmorItem;
 import net.mcczai.bocchitherock.item.instrument.drumitem.DrumBlockItem;
 import net.mcczai.bocchitherock.item.instrument.guitar.GuitarItem;
 import net.mcczai.bocchitherock.item.instrument.guitardc.GuitardcItem;

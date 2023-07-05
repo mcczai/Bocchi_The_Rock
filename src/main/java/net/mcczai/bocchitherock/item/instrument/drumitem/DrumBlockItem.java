@@ -43,7 +43,7 @@ public class DrumBlockItem extends BlockItem implements GeoItem {
         controllerRegistrar.add(new AnimationController<>(this,"controller",0,this::predicate));
     }
 
-    private <T extends GeoAnimatable> PlayState predicate(final AnimationState<T> tanimationState) {
+    private <T extends GeoAnimatable> PlayState predicate(AnimationState<T> tanimationState) {
         tanimationState.getController().setAnimation(RawAnimation.begin().then("animation.drum.standby", Animation.LoopType.LOOP));
         return PlayState.CONTINUE;
     }

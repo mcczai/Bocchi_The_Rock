@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.item.custom;
+package net.mcczai.bocchitherock.entity.client.armor;
 
 import net.mcczai.bocchitherock.entity.client.armor.TshirtArmorRenderer;
 import net.minecraft.client.model.HumanoidModel;
@@ -10,11 +10,8 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import org.jetbrains.annotations.NotNull;
 import software.bernie.geckolib.animatable.GeoItem;
-import software.bernie.geckolib.constant.DefaultAnimations;
-import software.bernie.geckolib.core.animatable.GeoAnimatable;
 import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.*;
-import software.bernie.geckolib.core.animation.AnimationController;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
