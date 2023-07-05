@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.item.guitardc;
+package net.mcczai.bocchitherock.item.instrument.guitardc;
 
 import software.bernie.geckolib.renderer.GeoItemRenderer;
 

@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.item.drumitem;
+package net.mcczai.bocchitherock.item.instrument.drumitem;
 
 import net.mcczai.bocchitherock.bocchitherock;
 import net.minecraft.resources.ResourceLocation;

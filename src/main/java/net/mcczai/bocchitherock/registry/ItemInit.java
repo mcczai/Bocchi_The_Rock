@@ -1,13 +1,17 @@
 package net.mcczai.bocchitherock.registry;
 
 import net.mcczai.bocchitherock.bocchitherock;
-import net.mcczai.bocchitherock.item.bass.BassItem;
-import net.mcczai.bocchitherock.item.drumitem.DrumBlockItem;
-import net.mcczai.bocchitherock.item.guitar.GuitarItem;
-import net.mcczai.bocchitherock.item.guitardc.GuitardcItem;
+import net.mcczai.bocchitherock.item.fumo.bocchi.BocchiItem;
+import net.mcczai.bocchitherock.item.fumo.ikuyo.IkuyoItem;
+import net.mcczai.bocchitherock.item.fumo.nijika.NijikaItem;
+import net.mcczai.bocchitherock.item.fumo.ruyo.RuyoItem;
+import net.mcczai.bocchitherock.item.instrument.bass.BassItem;
+import net.mcczai.bocchitherock.item.custom.TshirtArmorItem;
+import net.mcczai.bocchitherock.item.instrument.drumitem.DrumBlockItem;
+import net.mcczai.bocchitherock.item.instrument.guitar.GuitarItem;
+import net.mcczai.bocchitherock.item.instrument.guitardc.GuitardcItem;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -19,8 +23,16 @@ public class ItemInit {
     public static final RegistryObject<Item> GUITAR = ITEMS.register("guitar",()->new GuitarItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> BASS = ITEMS.register("bass",()->new BassItem(new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> GUITARDC = ITEMS.register("guitardc",()->new GuitardcItem(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> BOCCHI = ITEMS.register("bocchi",()->new BocchiItem((new Item.Properties().stacksTo(1))));
+    public static final RegistryObject<Item> NIJIKA = ITEMS.register("nijika",()->new NijikaItem(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> IKUYO = ITEMS.register("ikuyo",()->new IkuyoItem(new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> RUYO = ITEMS.register("ruyo",()->new RuyoItem(new Item.Properties().stacksTo(1)));
+
+    public static final RegistryObject<ArmorItem> TSHIRT = ITEMS.register("tshirt",()->new TshirtArmorItem(ArmorMaterials.IRON, ArmorItem.Type.CHESTPLATE,new Item.Properties()));
+
     public static final RegistryObject<Item> DRUM_BLOCK_ITEM = ITEMS.register("drum_block",()->new DrumBlockItem(BlockInit.DRUM_BLOCK.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> TEST_BLOCK_ITEM = ITEMS.register("test_block", () -> new BlockItem(BlockInit.TEST_BLOCK.get(), new Item.Properties()));
+
     public static final RegistryObject<Item> TEST = ITEMS.register("test", () -> new Item((new Item.Properties().food(new FoodProperties.Builder()
             .alwaysEat().nutrition(1).saturationMod(2f).build()))));
 }

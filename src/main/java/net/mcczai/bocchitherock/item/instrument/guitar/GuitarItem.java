@@ -1,6 +1,5 @@
-package net.mcczai.bocchitherock.item.guitardc;
+package net.mcczai.bocchitherock.item.instrument.guitar;
 
-import net.mcczai.bocchitherock.item.guitar.GuitarRenderer;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
@@ -13,10 +12,11 @@ import software.bernie.geckolib.util.RenderUtils;
 
 import java.util.function.Consumer;
 
-public final class GuitardcItem extends Item implements GeoItem {
+
+public final class GuitarItem extends Item implements GeoItem {
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
-    public GuitardcItem(Properties properties) {
+    public GuitarItem(Properties properties) {
         super(properties);
     }
 
@@ -43,12 +43,12 @@ public final class GuitardcItem extends Item implements GeoItem {
     @Override
     public void initializeClient(Consumer<IClientItemExtensions> consumer) {
         consumer.accept(new IClientItemExtensions() {
-            private GuitardcRenderer renderer;
+            private GuitarRenderer renderer;
 
             @Override
             public BlockEntityWithoutLevelRenderer getCustomRenderer() {
                 if (this.renderer == null){
-                    renderer = new GuitardcRenderer();
+                    renderer = new GuitarRenderer();
                 }
                 return this.renderer;
             }

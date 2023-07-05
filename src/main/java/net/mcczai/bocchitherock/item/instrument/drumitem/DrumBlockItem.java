@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.item.drumitem;
+package net.mcczai.bocchitherock.item.instrument.drumitem;
 
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.world.item.BlockItem;

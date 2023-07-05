@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.item.guitar;
+package net.mcczai.bocchitherock.item.instrument.bass;
 
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.world.item.Item;
@@ -12,11 +12,10 @@ import software.bernie.geckolib.util.RenderUtils;
 
 import java.util.function.Consumer;
 
-
-public final class GuitarItem extends Item implements GeoItem {
+public final class BassItem extends Item implements GeoItem {
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
 
-    public GuitarItem(Properties properties) {
+    public BassItem(Properties properties) {
         super(properties);
     }
 
@@ -43,12 +42,12 @@ public final class GuitarItem extends Item implements GeoItem {
     @Override
     public void initializeClient(Consumer<IClientItemExtensions> consumer) {
         consumer.accept(new IClientItemExtensions() {
-            private GuitarRenderer renderer;
+            private BassRenderer renderer;
 
             @Override
             public BlockEntityWithoutLevelRenderer getCustomRenderer() {
                 if (this.renderer == null){
-                    renderer = new GuitarRenderer();
+                    renderer = new BassRenderer();
                 }
                 return this.renderer;
             }

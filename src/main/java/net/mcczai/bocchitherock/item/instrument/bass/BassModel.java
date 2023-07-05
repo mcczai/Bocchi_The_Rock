@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.item.bass;
+package net.mcczai.bocchitherock.item.instrument.bass;
 
 import net.mcczai.bocchitherock.bocchitherock;
 import net.minecraft.resources.ResourceLocation;
