@@ -30,6 +30,10 @@ public class bocchitherockTab {
                     output.accept(ItemInit.GUITARDC.get());
                     output.accept(ItemInit.GUITAR.get());
                     output.accept(ItemInit.BASS.get());
+                    output.accept(ItemInit.BOCCHI.get());
+                    output.accept(ItemInit.IKUYO.get());
+                    output.accept(ItemInit.NIJIKA.get());
+                    output.accept(ItemInit.RUYO.get());
 
 
                 }).build();

@@ -5,6 +5,10 @@
   "item.bocchitherock.guitar" : "Gibson 1968",
   "item.bocchitherock.guitardc" : "Gibson Junior DC",
   "item.bocchitherock.bass" : "Fender P",
+  "item.bocchitherock.bocchi" : "小波奇",
+  "item.bocchitherock.nijika" : "夏虹",
+  "item.bocchitherock.ikuyo" : "喜多",
+  "item.bocchitherock.ruyo" : "凉",
 
   "block.bocchitherock.drum_block": "帝王之星",
   "block.bocchitherock.test_block": "测试方块(暂无效果)"
