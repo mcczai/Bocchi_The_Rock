@@ -26,7 +26,7 @@ public class DrumAnimateBlock extends BaseEntityBlock {
 
     public DrumAnimateBlock(Properties properties){
         super(properties.noOcclusion());
-        this.registerDefaultState(this.getStateDefinition().any().setValue(FACING, Direction.EAST));
+        this.registerDefaultState(this.getStateDefinition().any().setValue(FACING, Direction.SOUTH));
     }
 
     @Nullable
