@@ -1,6 +1,6 @@
-package net.mcczai.bocchitherock.registry;
+package net.mcczai.bocchitherock.Init;
 
-import net.mcczai.bocchitherock.block.entity.client.drum.DrumBlockEntity;
+import net.mcczai.bocchitherock.block.drum.DrumBlockEntity;
 import net.mcczai.bocchitherock.bocchitherock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.registries.DeferredRegister;

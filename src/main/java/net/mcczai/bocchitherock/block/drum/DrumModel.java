@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.block.entity.client.drum;
+package net.mcczai.bocchitherock.block.drum;
 
 import net.mcczai.bocchitherock.bocchitherock;
 import net.minecraft.resources.ResourceLocation;

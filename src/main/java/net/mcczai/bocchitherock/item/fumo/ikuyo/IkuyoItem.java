@@ -8,7 +8,6 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.core.animatable.instance.SingletonAnimatableInstanceCache;
 import software.bernie.geckolib.core.animation.AnimatableManager;
 
-import java.awt.font.TextHitInfo;
 import java.util.function.Consumer;
 
 public class IkuyoItem extends Item implements GeoItem {

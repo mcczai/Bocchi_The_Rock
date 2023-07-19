@@ -1,6 +1,6 @@
-package net.mcczai.bocchitherock.registry;
+package net.mcczai.bocchitherock.Init;
 
-import net.mcczai.bocchitherock.block.custom.DrumAnimateBlock;
+import net.mcczai.bocchitherock.block.DrumAnimateBlock;
 import net.mcczai.bocchitherock.bocchitherock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockBehaviour;

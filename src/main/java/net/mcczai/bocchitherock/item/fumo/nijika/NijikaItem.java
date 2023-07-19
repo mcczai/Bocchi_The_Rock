@@ -1,6 +1,5 @@
 package net.mcczai.bocchitherock.item.fumo.nijika;
 
-import net.mcczai.bocchitherock.item.fumo.bocchi.BocchiRenderer;
 import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;

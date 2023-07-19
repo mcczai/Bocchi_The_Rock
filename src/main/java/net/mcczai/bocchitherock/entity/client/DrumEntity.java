@@ -1,6 +1,6 @@
 package net.mcczai.bocchitherock.entity.client;
 
-import net.mcczai.bocchitherock.registry.EntityInit;
+import net.mcczai.bocchitherock.Init.EntityInit;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

@@ -1,10 +1,10 @@
 package net.mcczai.bocchitherock;
 
-import net.mcczai.bocchitherock.block.entity.client.drum.DrumRenderer;
-import net.mcczai.bocchitherock.registry.BlockEntities;
-import net.mcczai.bocchitherock.registry.BlockInit;
-import net.mcczai.bocchitherock.registry.EntityInit;
-import net.mcczai.bocchitherock.registry.ItemInit;
+import net.mcczai.bocchitherock.Init.BlockEntities;
+import net.mcczai.bocchitherock.Init.BlockInit;
+import net.mcczai.bocchitherock.Init.EntityInit;
+import net.mcczai.bocchitherock.Init.ItemInit;
+import net.mcczai.bocchitherock.block.drum.DrumRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;

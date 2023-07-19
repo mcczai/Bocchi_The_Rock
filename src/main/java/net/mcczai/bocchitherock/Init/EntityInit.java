@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.registry;
+package net.mcczai.bocchitherock.Init;
 
 import net.mcczai.bocchitherock.bocchitherock;
 import net.mcczai.bocchitherock.entity.client.DrumEntity;

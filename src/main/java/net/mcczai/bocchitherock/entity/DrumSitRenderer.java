@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.block.entity.client;
+package net.mcczai.bocchitherock.entity;
 
 import net.mcczai.bocchitherock.entity.client.DrumEntity;
 import net.minecraft.client.renderer.entity.EntityRenderer;

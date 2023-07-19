@@ -1,7 +1,7 @@
 package net.mcczai.bocchitherock;
 
-import net.mcczai.bocchitherock.registry.BlockInit;
-import net.mcczai.bocchitherock.registry.ItemInit;
+import net.mcczai.bocchitherock.Init.BlockInit;
+import net.mcczai.bocchitherock.Init.ItemInit;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

@@ -1,6 +1,6 @@
-package net.mcczai.bocchitherock.block.entity.client.drum;
+package net.mcczai.bocchitherock.block.drum;
 
-import net.mcczai.bocchitherock.registry.BlockEntities;
+import net.mcczai.bocchitherock.Init.BlockEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;

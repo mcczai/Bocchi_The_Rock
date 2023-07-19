@@ -1,6 +1,6 @@
-package net.mcczai.bocchitherock.block.entity.client.drum;
+package net.mcczai.bocchitherock.block.drum;
 
-import net.mcczai.bocchitherock.registry.BlockEntities;
+import net.mcczai.bocchitherock.Init.BlockEntities;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
