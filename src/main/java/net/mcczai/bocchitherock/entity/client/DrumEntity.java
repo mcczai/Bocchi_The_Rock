@@ -102,7 +102,7 @@ public class DrumEntity extends Entity {
             Vec3 safeVec = DismountHelper.findSafeDismountLocation(entity.getType(), this.level(), this.blockPosition().relative(dir), false);
             if(safeVec != null)
             {
-                return safeVec.add(0, 0.25, 0);
+                return safeVec.add(0, 0.55, 0);
             }
         }
         return super.getDismountLocationForPassenger(entity);
@@ -132,7 +132,7 @@ public class DrumEntity extends Entity {
     {
         passenger.setYBodyRot(this.getYRot());
         float wrappedYaw = Mth.wrapDegrees(passenger.getYRot() - this.getYRot());
-        float clampedYaw = Mth.clamp(wrappedYaw, -120.0F, 120.0F);
+        float clampedYaw = Mth.clamp(wrappedYaw, -360.0F, 360.0F);
         passenger.yRotO += clampedYaw - wrappedYaw;
         passenger.setYRot(passenger.getYRot() + clampedYaw - wrappedYaw);
         passenger.setYHeadRot(passenger.getYRot());

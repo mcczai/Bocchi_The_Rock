@@ -11,27 +11,23 @@ import java.io.File;
 public class MidiPlayer {
 
     private static final ResourceLocation midiflie = new ResourceLocation(bocchitherock.ID,"midi/test.mid");
-    private static final File midif = new File("./midi/test.mid");
 
     public static  MidiDevice midid;
     public static Logger LOGGER = LogUtils.getLogger();
     public static long time = 0;
     public static Sequence sequence;
     public static Sequencer sequencer;
+    public static File midif = new MidiFileResourceLocation().getLocalResource();
 
-    Synthesizer midis = (Synthesizer) midid;  //创建合成器至默认midi设备
+    //Synthesizer midis = (Synthesizer) midid;  //创建合成器至默认midi设备
 
-    public void MidiPlayer(boolean click, Sequence sequence, Sequencer sequencer) {
+    public void MidiPlayer(boolean click) {
         if (click) {
             try {
                 sequence = MidiSystem.getSequence(midif); //加载midi文件至播放序列
-                LOGGER.info("midif OK");
                 sequencer = MidiSystem.getSequencer();  //新建一个播放器
-                LOGGER.info("sequencer OK");
                 sequencer.open();
-                LOGGER.info("sequencer OPEN");
                 sequencer.setSequence(sequence);
-                LOGGER.info("midif in sequencer");
                 if (!sequencer.isRunning()) {
                     sequencer.start();
                     LOGGER.info("sequencer RUN");
@@ -49,7 +45,6 @@ public class MidiPlayer {
                 }
                 if (sequencer.isOpen()) {
                     sequencer.close();
-                    LOGGER.info("sequencer CLOSE");
                 }
             }catch (Exception e) {
                 e.printStackTrace();

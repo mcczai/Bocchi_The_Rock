@@ -16,9 +16,9 @@ public class MidiTestTool extends Item {
 
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        /*click = !click;
+        click = !click;
         MidiPlayer midiPlayer = new MidiPlayer();
-        midiPlayer.MidiPlayer(click);*/
+        midiPlayer.MidiPlayer(click);
         return InteractionResultHolder.success(player.getItemInHand(hand));
     }
 }
