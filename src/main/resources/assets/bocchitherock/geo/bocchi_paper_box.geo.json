@@ -1,0 +1,100 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.unknown",
+				"texture_width": 1024,
+				"texture_height": 1024,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bocchispaperbox",
+					"pivot": [-0.1, 12, 0]
+				},
+				{
+					"name": "group",
+					"parent": "bocchispaperbox",
+					"pivot": [0, -9, 0],
+					"cubes": [
+						{
+							"origin": [-6.95, 31.7, -4.3],
+							"size": [13.9, 0.3, 9],
+							"uv": {
+								"north": {"uv": [176, 368], "uv_size": [88, 2]},
+								"east": {"uv": [376, 240], "uv_size": [72, 2]},
+								"south": {"uv": [368, 344], "uv_size": [88, 2]},
+								"west": {"uv": [376, 248], "uv_size": [72, 2]},
+								"up": {"uv": [88, 176], "uv_size": [88, 72]},
+								"down": {"uv": [176, 248], "uv_size": [88, -72]}
+							}
+						},
+						{
+							"origin": [-6.65, 0, -4.3],
+							"size": [13.3, 0.3, 8.6],
+							"uv": {
+								"north": {"uv": [176, 368], "uv_size": [88, 2]},
+								"east": {"uv": [376, 240], "uv_size": [72, 2]},
+								"south": {"uv": [368, 344], "uv_size": [88, 2]},
+								"west": {"uv": [376, 248], "uv_size": [72, 2]},
+								"up": {"uv": [88, 176], "uv_size": [88, 72]},
+								"down": {"uv": [176, 248], "uv_size": [88, -72]}
+							}
+						},
+						{
+							"origin": [-6.65, 0, 4.3],
+							"size": [13.3, 31.7, 0.4],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [83.00032, 172]},
+								"east": {"uv": [48, 352], "uv_size": [2, 172]},
+								"south": {"uv": [88, 0], "uv_size": [83.00032, 172]},
+								"west": {"uv": [56, 352], "uv_size": [2, 172]},
+								"up": {"uv": [368, 352], "uv_size": [83.00032, 2]},
+								"down": {"uv": [368, 362], "uv_size": [83.00032, -2]}
+							}
+						},
+						{
+							"origin": [-6.95, 0, -4.5],
+							"size": [13.9, 32, 0.2],
+							"uv": {
+								"north": {"uv": [0, 176], "uv_size": [83.00032, 172]},
+								"east": {"uv": [64, 352], "uv_size": [2, 172]},
+								"south": {"uv": [176, 0], "uv_size": [83.00032, 172]},
+								"west": {"uv": [72, 352], "uv_size": [2, 172]},
+								"up": {"uv": [368, 368], "uv_size": [83.00032, 2]},
+								"down": {"uv": [80, 378], "uv_size": [83.00032, -2]}
+							}
+						},
+						{
+							"origin": [6.65, 0, -4.3],
+							"size": [0.3, 31.7, 9],
+							"uv": {
+								"north": {"uv": [264, 368], "uv_size": [2, 83.00032]},
+								"east": {"uv": [88, 248], "uv_size": [72, 83.00032]},
+								"south": {"uv": [272, 368], "uv_size": [2, 83.00032]},
+								"west": {"uv": [160, 248], "uv_size": [72, 83.00032]},
+								"up": {"uv": [296, 376], "uv_size": [2, 72]},
+								"down": {"uv": [304, 448], "uv_size": [2, -72]}
+							}
+						},
+						{
+							"origin": [-6.95, 0, -4.3],
+							"size": [0.3, 31.7, 9],
+							"uv": {
+								"north": {"uv": [266, 368], "uv_size": [-2, 83.00032]},
+								"east": {"uv": [232, 248], "uv_size": [-72, 83.00032]},
+								"south": {"uv": [274, 368], "uv_size": [-2, 83.00032]},
+								"west": {"uv": [160, 248], "uv_size": [-72, 83.00032]},
+								"up": {"uv": [298, 376], "uv_size": [-2, 72]},
+								"down": {"uv": [306, 448], "uv_size": [-2, -72]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

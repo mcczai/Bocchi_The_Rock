@@ -4,7 +4,9 @@ import net.mcczai.bocchitherock.Init.BlockEntities;
 import net.mcczai.bocchitherock.Init.BlockInit;
 import net.mcczai.bocchitherock.Init.EntityInit;
 import net.mcczai.bocchitherock.Init.ItemInit;
+import net.mcczai.bocchitherock.block.box.BoxRenderer;
 import net.mcczai.bocchitherock.block.drum.DrumRenderer;
+import net.mcczai.bocchitherock.block.yamaha.YamahaRenderer;
 import net.mcczai.bocchitherock.entity.DrumSitRenderer;
 import net.mcczai.bocchitherock.entity.client.DrumEntity;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
@@ -42,6 +44,8 @@ public class bocchitherock {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event){
             BlockEntityRenderers.register(BlockEntities.DRUM_ANIMATED_BLOCK_ENTITY.get(), DrumRenderer::new);
+            BlockEntityRenderers.register(BlockEntities.BOX_BLOCK_ENTITY.get(), BoxRenderer::new);
+            BlockEntityRenderers.register(BlockEntities.YAMAHA_BLOCK_ENTITY.get(), YamahaRenderer::new);
             EntityRenderers.register(EntityInit.DRUM_SIT.get(), DrumSitRenderer::new);
         }
     }

@@ -20,21 +20,25 @@ public class bocchitherockTab {
 
     public CreativeModeTab output() {
         return CreativeModeTab.builder().title(Component.translatable("itemGroup.bocchitherock_tab"))
-                .withTabsBefore(CreativeModeTabs.COMBAT)
+                .withTabsBefore(CreativeModeTabs.SPAWN_EGGS)
                 .icon(() -> new ItemStack(ItemInit.BOCCHI.get()))
                 .displayItems((parameters, output) -> {
 
                     output.accept(ItemInit.TEST.get());
                     output.accept(ItemInit.MIDI_TEST_TOOL.get());
-                    output.accept(BlockInit.DRUM_BLOCK.get());
                     output.accept(ItemInit.GUITARDC.get());
                     output.accept(ItemInit.GUITAR.get());
                     output.accept(ItemInit.BASS.get());
-                    output.accept(ItemInit.TSHIRT.get());
                     output.accept(ItemInit.BOCCHI.get());
                     output.accept(ItemInit.IKUYO.get());
                     output.accept(ItemInit.NIJIKA.get());
                     output.accept(ItemInit.RUYO.get());
+
+                    output.accept(ItemInit.TSHIRT.get());
+
+                    output.accept(BlockInit.DRUM_BLOCK.get());
+                    output.accept(BlockInit.BOX_BLOCK.get());
+                    output.accept(BlockInit.YAMAHA_BLOCK.get());
 
 
                 }).build();

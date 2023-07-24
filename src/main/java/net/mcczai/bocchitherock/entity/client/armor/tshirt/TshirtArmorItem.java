@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.entity.client.armor;
+package net.mcczai.bocchitherock.entity.client.armor.tshirt;
 
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.world.entity.EquipmentSlot;

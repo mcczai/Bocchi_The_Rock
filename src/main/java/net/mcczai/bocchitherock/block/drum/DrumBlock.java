@@ -1,6 +1,5 @@
-package net.mcczai.bocchitherock.block;
+package net.mcczai.bocchitherock.block.drum;
 
-import net.mcczai.bocchitherock.block.drum.DrumBlockEntity;
 import net.mcczai.bocchitherock.entity.client.DrumEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -21,10 +20,10 @@ import net.minecraft.world.phys.BlockHitResult;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class DrumAnimateBlock extends BaseEntityBlock {
+public class DrumBlock extends BaseEntityBlock {
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
 
-    public DrumAnimateBlock(Properties properties){
+    public DrumBlock(Properties properties){
         super(properties.noOcclusion());
         this.registerDefaultState(this.getStateDefinition().any().setValue(FACING, Direction.SOUTH));
     }

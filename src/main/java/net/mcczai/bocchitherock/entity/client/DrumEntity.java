@@ -102,7 +102,7 @@ public class DrumEntity extends Entity {
             Vec3 safeVec = DismountHelper.findSafeDismountLocation(entity.getType(), this.level(), this.blockPosition().relative(dir), false);
             if(safeVec != null)
             {
-                return safeVec.add(0.5, 0.55, 0.5);    //下座位时的偏差
+                return safeVec.add(0.0, 0.0, 0.0);    //下座位时的偏差
             }
         }
         return super.getDismountLocationForPassenger(entity);

@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.entity.client.armor;
+package net.mcczai.bocchitherock.entity.client.armor.tshirt;
 
 import net.mcczai.bocchitherock.bocchitherock;
 import net.minecraft.resources.ResourceLocation;

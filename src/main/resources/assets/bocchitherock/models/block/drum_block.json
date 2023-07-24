@@ -1,13 +1,14 @@
 {
   "credit": "Made with Blockbench",
   "parent": "builtin/entity",
-  "textures": {
-    "bone": "bocchitherock:block/drum"
-  },
   "texture_size": [
     128,
     128
   ],
+  "textures": {
+    "bone": "bocchitherock:block/drum",
+    "particle" : "bocchitherock:block/yamaha"
+  },
   "display": {
     "thirdperson_righthand": {
       "scale": [

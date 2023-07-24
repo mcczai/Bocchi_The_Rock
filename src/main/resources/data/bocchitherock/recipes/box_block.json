@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "O": {
+      "item": "minecraft:orange_dye"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "POP",
+    "PPP"
+  ],
+  "result": {
+    "item": "bocchitherock:box_block"
+  }
+}

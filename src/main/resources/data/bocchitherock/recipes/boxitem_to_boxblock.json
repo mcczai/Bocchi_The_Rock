@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "bocchitherock:bocchi_the_box_armor"
+    }
+  ],
+  "result": {
+    "item": "bocchitherock:box_block"
+  }
+}

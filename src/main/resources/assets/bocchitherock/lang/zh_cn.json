@@ -9,9 +9,13 @@
   "item.bocchitherock.nijika" : "夏虹",
   "item.bocchitherock.ikuyo" : "喜多",
   "item.bocchitherock.ruyo" : "凉",
+
   "item.bocchitherock.tshirt" : "“結束バンド”T恤衫",
+  "item.bocchitherock.bocchi_the_box_armor" : "波奇的纸箱盒",
 
 
   "block.bocchitherock.drum_block": "TAMA IP52KH6帝王之星",
+  "block.bocchitherock.box_block": "波奇的纸箱盒",
+  "block.bocchitherock.yamaha_block": "雅马哈 THR5",
   "block.bocchitherock.test_block": "测试方块(暂无效果)"
 }

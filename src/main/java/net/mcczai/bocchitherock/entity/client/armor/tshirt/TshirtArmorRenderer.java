@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.entity.client.armor;
+package net.mcczai.bocchitherock.entity.client.armor.tshirt;
 
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
