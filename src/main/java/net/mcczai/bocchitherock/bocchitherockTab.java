@@ -24,8 +24,6 @@ public class bocchitherockTab {
                 .icon(() -> new ItemStack(ItemInit.BOCCHI.get()))
                 .displayItems((parameters, output) -> {
 
-                    output.accept(ItemInit.TEST.get());
-                    output.accept(ItemInit.MIDI_TEST_TOOL.get());
                     output.accept(ItemInit.GUITARDC.get());
                     output.accept(ItemInit.GUITAR.get());
                     output.accept(ItemInit.BASS.get());
@@ -35,6 +33,7 @@ public class bocchitherockTab {
                     output.accept(ItemInit.RUYO.get());
 
                     output.accept(ItemInit.TSHIRT.get());
+                    output.accept(ItemInit.BOX.get());
 
                     output.accept(BlockInit.DRUM_BLOCK.get());
                     output.accept(BlockInit.BOX_BLOCK.get());

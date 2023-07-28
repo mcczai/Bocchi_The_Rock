@@ -2,7 +2,7 @@
 modLoader="javafml" #mandatory
 
 loaderVersion="${loader_version_range}" #mandatory
-license="${mod_license}"
+license="MIT license"
 
 [[mods]] #mandatory
 
