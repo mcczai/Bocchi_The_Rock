@@ -21,6 +21,8 @@
   "block.bocchitherock.test_block": "测试方块(暂无效果)",
 
   "net.mcczai.tooltip.box_and_armor": "可以通过合成在头盔和方块间切换",
-  "net.mcczai.tooltip.guitar_support": "可以把吉他放上去(禁止放其他物品!!!)"
+  "net.mcczai.tooltip.guitar_support": "可以把吉他放上去(禁止放其他物品!!!)",
+  "component.bocchitherock.guitar_support": "吉他架"
+
 
 }
