@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.block.box;
+package net.mcczai.bocchitherock.block.chair;
 
 import net.mcczai.bocchitherock.entity.client.DrumEntity;
 import net.minecraft.core.BlockPos;
@@ -23,31 +23,13 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class BoxBlock extends BaseEntityBlock {
+public class ChairBlock extends BaseEntityBlock {
+
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
 
-
-    public BoxBlock(Properties properties){
+    public ChairBlock(Properties properties) {
         super(properties.noOcclusion());
         this.registerDefaultState(this.getStateDefinition().any().setValue(FACING, Direction.SOUTH));
-    }
-
-    public static final VoxelShape SHAPENS = Block.box(0.7, 0, 2, 15.1, 32, 12.8);
-    public static final VoxelShape SHAPEWE = Block.box(2.3, 0, 0.9, 13.1, 32, 15.3);
-
-    @Override
-    public @NotNull VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos blockPos, CollisionContext context) {
-        if (state.getValue(FACING).getAxis() == Direction.Axis.Z)
-            return SHAPENS;
-        return SHAPEWE;
-    }
-
-    @Nullable
-    @Override
-    public BlockEntity newBlockEntity(BlockPos blockPos, BlockState state) {
-
-        return new BoxBlockEntity(blockPos,state);
-
     }
 
     @Override
@@ -68,9 +50,26 @@ public class BoxBlock extends BaseEntityBlock {
         return super.defaultBlockState().setValue(FACING,context.getNearestLookingDirection());
     }
 
+    public static final VoxelShape SHAPENS = Block.box(3.6, 0, 3, 12.6, 10, 15);
+    public static final VoxelShape SHAPEWE = Block.box(1, 0, 3.6, 13, 10, 12.6);
+
+    @Override
+    public @NotNull VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos blockPos, CollisionContext context) {
+        if (state.getValue(FACING).getAxis() == Direction.Axis.Z)
+            return SHAPENS;
+        return SHAPEWE;
+    }
+
+    @Nullable
+    @Override
+    public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
+        return new ChairEntity(pos,state);
+    }
+
     @Override
     public @NotNull InteractionResult use(@NotNull BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result)
     {
-        return DrumEntity.create(level, pos, 0.1, player, state.getValue(FACING));
+        return DrumEntity.create(level, pos, 0.4, player, state.getValue(FACING));
     }
+
 }

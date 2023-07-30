@@ -38,6 +38,11 @@ public class bocchitherockTab {
                     output.accept(BlockInit.DRUM_BLOCK.get());
                     output.accept(BlockInit.BOX_BLOCK.get());
                     output.accept(BlockInit.YAMAHA_BLOCK.get());
+                    output.accept(BlockInit.GUITAR_SUPPORT_BLOCK.get());
+                    output.accept(BlockInit.STARRY_LIGHT_BLOCK.get());
+                    output.accept(BlockInit.CHAIR_BLOCK.get());
+                    output.accept(BlockInit.TABLE_BLOCK.get());
+                    output.accept(BlockInit.CHESSBOARD_BLOCK.get());
 
 
                 }).build();

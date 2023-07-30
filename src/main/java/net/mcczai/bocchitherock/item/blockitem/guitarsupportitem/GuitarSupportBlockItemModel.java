@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.item.guitarsupportitem;
+package net.mcczai.bocchitherock.item.blockitem.guitarsupportitem;
 
 import net.mcczai.bocchitherock.bocchitherock;
 import net.minecraft.resources.ResourceLocation;

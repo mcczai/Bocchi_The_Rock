@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.item.yamahaitem;
+package net.mcczai.bocchitherock.item.blockitem.yamahaitem;
 
 import net.mcczai.bocchitherock.bocchitherock;
 import net.minecraft.resources.ResourceLocation;

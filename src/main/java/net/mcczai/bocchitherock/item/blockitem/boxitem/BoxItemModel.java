@@ -1,4 +1,4 @@
-package net.mcczai.bocchitherock.item.boxitem;
+package net.mcczai.bocchitherock.item.blockitem.boxitem;
 
 import net.mcczai.bocchitherock.bocchitherock;
 import net.minecraft.resources.ResourceLocation;

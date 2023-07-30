@@ -1,0 +1,110 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "builtin/entity",
+  "texture_size": [
+    128,
+    128
+  ],
+  "textures": {
+    "bone": "bocchitherock:block/chair",
+    "particle" : "bocchitherock:block/chair"
+  },
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [
+        50,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        -0.75,
+        -3.5
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        50,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        -0.75,
+        -3.5
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        27,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        1.5
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        27,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        1.5
+      ],
+      "scale": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        -4,
+        0
+      ]
+    },
+    "gui": {
+      "rotation": [
+        34,
+        113,
+        0
+      ],
+      "translation": [
+        0,
+        -6,
+        -6.5
+      ],
+      "scale": [
+        0.7,
+        0.7,
+        0.7
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        6.25,
+        -2.25
+      ]
+    },
+    "fixed": {
+      "translation": [
+        0,
+        -9.25,
+        -6.5
+      ]
+    }
+  }
+}

@@ -5,7 +5,10 @@ import net.mcczai.bocchitherock.bocchitherock;
 import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 
-import javax.sound.midi.*;
+import javax.sound.midi.MidiDevice;
+import javax.sound.midi.MidiSystem;
+import javax.sound.midi.Sequence;
+import javax.sound.midi.Sequencer;
 import java.io.File;
 
 public class MidiPlayer {
