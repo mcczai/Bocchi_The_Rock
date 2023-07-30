@@ -6,9 +6,11 @@ import net.mcczai.bocchitherock.Init.EntityInit;
 import net.mcczai.bocchitherock.Init.ItemInit;
 import net.mcczai.bocchitherock.block.box.BoxRenderer;
 import net.mcczai.bocchitherock.block.drum.DrumRenderer;
+import net.mcczai.bocchitherock.block.guitarsupport.GuitarSupportRenderer;
 import net.mcczai.bocchitherock.block.yamaha.YamahaRenderer;
 import net.mcczai.bocchitherock.entity.DrumSitRenderer;
 import net.mcczai.bocchitherock.entity.client.DrumEntity;
+import net.mcczai.bocchitherock.network.MessgesInit;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -18,6 +20,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import software.bernie.geckolib.GeckoLib;
 
@@ -39,6 +42,12 @@ public class bocchitherock {
 
     }
 
+    private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            MessgesInit.register();
+        });
+    }
+
     @Mod.EventBusSubscriber(modid = ID,bus = Mod.EventBusSubscriber.Bus.MOD,value = Dist.CLIENT)
     public static class ClientModEvents{
         @SubscribeEvent
@@ -46,6 +55,7 @@ public class bocchitherock {
             BlockEntityRenderers.register(BlockEntities.DRUM_ANIMATED_BLOCK_ENTITY.get(), DrumRenderer::new);
             BlockEntityRenderers.register(BlockEntities.BOX_BLOCK_ENTITY.get(), BoxRenderer::new);
             BlockEntityRenderers.register(BlockEntities.YAMAHA_BLOCK_ENTITY.get(), YamahaRenderer::new);
+            BlockEntityRenderers.register(BlockEntities.GUITAR_SUPPORT_BLOCK_ENTITY.get(), GuitarSupportRenderer::new);
             EntityRenderers.register(EntityInit.DRUM_SIT.get(), DrumSitRenderer::new);
         }
     }

@@ -15,9 +15,12 @@
 
 
   "block.bocchitherock.drum_block": "TAMA IP52KH6帝王之星",
+  "block.bocchitherock.guitar_support_block": "吉他支架",
   "block.bocchitherock.box_block": "波奇的纸箱盒",
   "block.bocchitherock.yamaha_block": "雅马哈 THR5",
   "block.bocchitherock.test_block": "测试方块(暂无效果)",
 
-  "net.mcczai.tooltip.box_and_armor": "可以通过合成在头盔和方块间切换"
+  "net.mcczai.tooltip.box_and_armor": "可以通过合成在头盔和方块间切换",
+  "net.mcczai.tooltip.guitar_support": "可以把吉他放上去(禁止放其他物品!!!)"
+
 }

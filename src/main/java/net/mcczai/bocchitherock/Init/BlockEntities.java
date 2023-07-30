@@ -2,6 +2,7 @@ package net.mcczai.bocchitherock.Init;
 
 import net.mcczai.bocchitherock.block.box.BoxBlockEntity;
 import net.mcczai.bocchitherock.block.drum.DrumBlockEntity;
+import net.mcczai.bocchitherock.block.guitarsupport.GuitarSupportEntity;
 import net.mcczai.bocchitherock.block.yamaha.YamahaBlockEntity;
 import net.mcczai.bocchitherock.bocchitherock;
 import net.minecraft.world.level.block.entity.BlockEntityType;
@@ -20,5 +21,8 @@ public class BlockEntities {
 
     public static final RegistryObject<BlockEntityType<YamahaBlockEntity>> YAMAHA_BLOCK_ENTITY = BLOCK_ENTITIES.register("yamaha_block_entity",() ->
             BlockEntityType.Builder.of(YamahaBlockEntity::new,BlockInit.YAMAHA_BLOCK.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<GuitarSupportEntity>> GUITAR_SUPPORT_BLOCK_ENTITY = BLOCK_ENTITIES.register("guitar_support_block_entity",() ->
+            BlockEntityType.Builder.of(GuitarSupportEntity::new,BlockInit.GUITAR_SUPPORT_BLOCK.get()).build(null));
 
 }

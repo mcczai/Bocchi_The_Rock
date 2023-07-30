@@ -9,6 +9,7 @@ import net.mcczai.bocchitherock.item.fumo.bocchi.BocchiItem;
 import net.mcczai.bocchitherock.item.fumo.ikuyo.IkuyoItem;
 import net.mcczai.bocchitherock.item.fumo.nijika.NijikaItem;
 import net.mcczai.bocchitherock.item.fumo.ruyo.RuyoItem;
+import net.mcczai.bocchitherock.item.guitarsupportitem.GuitarSupportItem;
 import net.mcczai.bocchitherock.item.instrument.bass.BassItem;
 import net.mcczai.bocchitherock.item.instrument.drumitem.DrumBlockItem;
 import net.mcczai.bocchitherock.item.instrument.guitar.GuitarItem;
@@ -41,6 +42,7 @@ public class ItemInit {
     public static final RegistryObject<Item> DRUM_BLOCK_ITEM = ITEMS.register("drum_block",()->new DrumBlockItem(BlockInit.DRUM_BLOCK.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> BOX_BLOCK_ITEM = ITEMS.register("box_block",()->new BoxBlockItem(BlockInit.BOX_BLOCK.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> YAMAHA_BLOCK_ITEM = ITEMS.register("yamaha_block",()->new YamahaBlockItem(BlockInit.YAMAHA_BLOCK.get(),new Item.Properties().stacksTo(1)));
+    public static final RegistryObject<Item> GUITAR_SUPPORT_BLOCK_ITEM = ITEMS.register("guitar_support_block",()->new GuitarSupportItem(BlockInit.GUITAR_SUPPORT_BLOCK.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> TEST_BLOCK_ITEM = ITEMS.register("test_block", () -> new BlockItem(BlockInit.TEST_BLOCK.get(), new Item.Properties()));
 
     public static final RegistryObject<Item> TEST = ITEMS.register("test", () -> new Item((new Item.Properties().food(new FoodProperties.Builder()

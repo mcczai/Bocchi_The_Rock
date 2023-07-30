@@ -2,6 +2,7 @@ package net.mcczai.bocchitherock.Init;
 
 import net.mcczai.bocchitherock.block.box.BoxBlock;
 import net.mcczai.bocchitherock.block.drum.DrumBlock;
+import net.mcczai.bocchitherock.block.guitarsupport.GuitarSupportBlock;
 import net.mcczai.bocchitherock.block.yamaha.YamahaBlock;
 import net.mcczai.bocchitherock.bocchitherock;
 import net.minecraft.world.level.block.Block;
@@ -18,5 +19,6 @@ public class BlockInit {
     public static final RegistryObject<Block> DRUM_BLOCK = BLOCKS.register("drum_block",()-> new DrumBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
     public static final RegistryObject<Block> BOX_BLOCK = BLOCKS.register("box_block",()-> new BoxBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
     public static final RegistryObject<Block> YAMAHA_BLOCK = BLOCKS.register("yamaha_block",()-> new YamahaBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
+    public static final RegistryObject<Block> GUITAR_SUPPORT_BLOCK = BLOCKS.register("guitar_support_block",()-> new GuitarSupportBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
 
 }
