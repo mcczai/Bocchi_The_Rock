@@ -29,7 +29,7 @@ public class BlockInit {
     public static final RegistryObject<Block> TLT_SOUND_BOX_BLOCK = BLOCKS.register("tlt_sound_box_block",()-> new TltSoundBoxBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
     public static final RegistryObject<Block> TABLE_BLOCK = BLOCKS.register("table_block",()-> new TableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
     public static final RegistryObject<Block> STARRY_LIGHT_BLOCK = BLOCKS.register("starry_light_block",()-> new StarryLightBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
-            .lightLevel((p_50870_) -> {return 15;})));
+            .lightLevel((p_50870_) -> {return 13;})));
     public static final RegistryObject<Block> CHAIR_BLOCK = BLOCKS.register("chair_block",()-> new ChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
 
 }
