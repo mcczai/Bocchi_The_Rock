@@ -9,7 +9,6 @@ import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.Container;
-import net.minecraft.world.ContainerHelper;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
@@ -29,10 +28,17 @@ import software.bernie.geckolib.core.animation.*;
 import software.bernie.geckolib.core.object.PlayState;
 import software.bernie.geckolib.util.RenderUtils;
 
+import static net.minecraft.world.inventory.MenuType.GENERIC_9x1;
+
 public class GuitarSupportEntity extends RandomizableContainerBlockEntity implements GeoBlockEntity {
     private AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
     private NonNullList<ItemStack> items = NonNullList.withSize(9,ItemStack.EMPTY);
-    public final static ItemStackHandler itemHandler = new ItemStackHandler(9);
+    public final ItemStackHandler itemHandler = new ItemStackHandler(9){
+        @Override
+        protected void onContentsChanged(int slot) {
+            setChanged();
+        }
+    };
     private ItemStack stack = ItemStack.EMPTY;
 
     public static Logger LOGGER = LogUtils.getLogger();
@@ -40,23 +46,16 @@ public class GuitarSupportEntity extends RandomizableContainerBlockEntity implem
     private ContainerOpenersCounter openersCounter = new ContainerOpenersCounter() {
         @Override
         protected void onOpen(Level level, BlockPos pos, BlockState state) {
-            level.setBlock(pos,state.setValue(GuitarSupportBlock.OPEN,true),1);
+
         }
 
         @Override
         protected void onClose(Level level, BlockPos pos, BlockState state) {
-            level.setBlock(pos,state.setValue(GuitarSupportBlock.OPEN,false),1);
 
         }
 
         @Override
         protected void openerCountChanged(Level level, BlockPos pos, BlockState state, int i, int i1) {
-            setChanged();
-            if (!level.isClientSide()){
-                MessgesInit.sendToClients(new ItemStackSyncS2CPacket(itemHandler,worldPosition));
-                LOGGER.info("S2C Messges off");
-            }
-
         }
 
         @Override
@@ -73,23 +72,22 @@ public class GuitarSupportEntity extends RandomizableContainerBlockEntity implem
     @Override
     protected void saveAdditional(CompoundTag compoundTag) {
         super.saveAdditional(compoundTag);
-        if(!this.trySaveLootTable(compoundTag)){
-            ContainerHelper.saveAllItems(compoundTag,this.items);
-            LOGGER.info("chest save off!");
-        }
+        compoundTag.put("Inventory", itemHandler.serializeNBT());
+        /*if (!level.isClientSide()){
+            MessgesInit.sendToClients(new ItemStackSyncS2CPacket(itemHandler,worldPosition));
+            LOGGER.info("S2C Messges off");
+        }*/
     }
 
     @Override
     public void load(CompoundTag compoundTag) {
         super.load(compoundTag);
-        this.items = NonNullList.withSize(this.getContainerSize(),ItemStack.EMPTY);
-        if (!this.trySaveLootTable(compoundTag)){
-            ContainerHelper.loadAllItems(compoundTag,this.items);
-        }
+        itemHandler.deserializeNBT(compoundTag.getCompound("Inventory"));
     }
 
     @Override
     public void startOpen(Player player) {
+        setChanged();
         if (this.remove && !player.isSpectator()){
             this.openersCounter.incrementOpeners(player,this.getLevel(),this.getBlockPos(),this.getBlockState());
         }
@@ -97,6 +95,7 @@ public class GuitarSupportEntity extends RandomizableContainerBlockEntity implem
 
     @Override
     public void stopOpen(Player player) {
+        setChanged();
         if (this.remove && !player.isSpectator()){
             this.openersCounter.decrementOpeners(player,this.getLevel(),this.getBlockPos(),this.getBlockState());
         }
@@ -128,13 +127,10 @@ public class GuitarSupportEntity extends RandomizableContainerBlockEntity implem
         return this.cache;
     }
 
-
     @Override
     public double getTick(Object blockEntity){
         return RenderUtils.getCurrentTick();
     }
-
-
 
     @Override
     protected NonNullList<ItemStack> getItems() {
@@ -153,7 +149,7 @@ public class GuitarSupportEntity extends RandomizableContainerBlockEntity implem
 
     @Override
     protected AbstractContainerMenu createMenu(int i, Inventory inventory) {
-        return ChestMenu.oneRow(i,inventory);
+        return new ChestMenu(GENERIC_9x1,i,inventory,this,1);
     }
 
     @Override
@@ -170,4 +166,6 @@ public class GuitarSupportEntity extends RandomizableContainerBlockEntity implem
     public ItemStack getStack() {
         return stack;
     }
+
+
 }
