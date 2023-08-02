@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model":"bocchitherock:block/can_block"
+    },
+    "facing=south": {
+      "model":"bocchitherock:block/can_block",
+      "y" : 180
+    },
+    "facing=west": {
+      "model":"bocchitherock:block/can_block",
+      "y" : 270
+    },
+    "facing=east": {
+      "model":"bocchitherock:block/can_block",
+      "y" : 90
+    },
+    "facing=down": {
+      "model":"bocchitherock:block/can_block",
+      "y" : 90
+    },
+    "facing=up": {
+      "model":"bocchitherock:block/can_block",
+      "y" : 90
+    }
+  }
+}

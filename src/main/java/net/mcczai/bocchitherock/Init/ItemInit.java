@@ -54,6 +54,7 @@ public class ItemInit {
 
     public static final RegistryObject<Item> TEST_BLOCK_ITEM = ITEMS.register("test_block", () -> new BlockItem(BlockInit.TEST_BLOCK.get(), new Item.Properties()));
     public static final RegistryObject<Item> CHESSBOARD_BLOCK_ITEM = ITEMS.register("chessboard_block", () -> new BlockItem(BlockInit.CHESSBOARD_BLOCK.get(), new Item.Properties().stacksTo(64)));
+    public static final RegistryObject<Item> CAN_BLOCK_ITEM = ITEMS.register("can_block",()->new BlockItem(BlockInit.CAN_BLOCK.get(),new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> TEST = ITEMS.register("test", () -> new Item((new Item.Properties().food(new FoodProperties.Builder()
             .alwaysEat().nutrition(1).saturationMod(2f).build()))));

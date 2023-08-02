@@ -43,6 +43,7 @@ public class bocchitherockTab {
                     output.accept(BlockInit.CHAIR_BLOCK.get());
                     output.accept(BlockInit.TABLE_BLOCK.get());
                     output.accept(BlockInit.CHESSBOARD_BLOCK.get());
+                    output.accept(BlockInit.CAN_BLOCK.get());
 
 
                 }).build();

@@ -37,6 +37,10 @@ public class GuitarSupportEntity extends RandomizableContainerBlockEntity implem
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
+            if (!level.isClientSide()){
+                MessgesInit.sendToClients(new ItemStackSyncS2CPacket(itemHandler,worldPosition));
+                LOGGER.info("S2C Messges off");
+            }
         }
     };
     private ItemStack stack = ItemStack.EMPTY;

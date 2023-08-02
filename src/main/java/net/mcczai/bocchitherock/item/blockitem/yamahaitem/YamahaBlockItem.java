@@ -4,6 +4,7 @@ import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.SingletonGeoAnimatable;
 import software.bernie.geckolib.core.animatable.GeoAnimatable;
@@ -57,4 +58,5 @@ public class YamahaBlockItem extends BlockItem implements GeoItem {
     public double getTick(Object itemStack) {
         return RenderUtils.getCurrentTick();
     }
+
 }

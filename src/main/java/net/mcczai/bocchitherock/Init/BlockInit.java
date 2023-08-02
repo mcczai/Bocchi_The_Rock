@@ -1,5 +1,6 @@
 package net.mcczai.bocchitherock.Init;
 
+import net.mcczai.bocchitherock.block.CanBlock;
 import net.mcczai.bocchitherock.block.box.BoxBlock;
 import net.mcczai.bocchitherock.block.chair.ChairBlock;
 import net.mcczai.bocchitherock.block.drum.DrumBlock;
@@ -28,6 +29,7 @@ public class BlockInit {
     public static final RegistryObject<Block> GUITAR_SUPPORT_BLOCK = BLOCKS.register("guitar_support_block",()-> new GuitarSupportBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
     public static final RegistryObject<Block> TLT_SOUND_BOX_BLOCK = BLOCKS.register("tlt_sound_box_block",()-> new TltSoundBoxBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
     public static final RegistryObject<Block> TABLE_BLOCK = BLOCKS.register("table_block",()-> new TableBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
+    public static final RegistryObject<Block> CAN_BLOCK = BLOCKS.register("can_block",()-> new CanBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
     public static final RegistryObject<Block> STARRY_LIGHT_BLOCK = BLOCKS.register("starry_light_block",()-> new StarryLightBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)
             .lightLevel((p_50870_) -> {return 13;})));
     public static final RegistryObject<Block> CHAIR_BLOCK = BLOCKS.register("chair_block",()-> new ChairBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE)));
