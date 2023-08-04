@@ -4,6 +4,7 @@ import net.mcczai.bocchitherock.bocchitherock;
 import net.mcczai.bocchitherock.entity.client.armor.box.BoxArmorItem;
 import net.mcczai.bocchitherock.entity.client.armor.tshirt.TshirtArmorItem;
 import net.mcczai.bocchitherock.item.MidiTestTool;
+import net.mcczai.bocchitherock.item.MusicDiscItem;
 import net.mcczai.bocchitherock.item.blockitem.boxitem.BoxBlockItem;
 import net.mcczai.bocchitherock.item.blockitem.chair.ChairBlockItem;
 import net.mcczai.bocchitherock.item.blockitem.guitarsupportitem.GuitarSupportItem;
@@ -19,11 +20,9 @@ import net.mcczai.bocchitherock.item.instrument.bass.BassItem;
 import net.mcczai.bocchitherock.item.instrument.drumitem.DrumBlockItem;
 import net.mcczai.bocchitherock.item.instrument.guitar.GuitarItem;
 import net.mcczai.bocchitherock.item.instrument.guitardc.GuitardcItem;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.ArmorItem;
-import net.minecraft.world.item.ArmorMaterials;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -51,6 +50,10 @@ public class ItemInit {
     public static final RegistryObject<Item> STARRY_LIGHT_BLOCK_ITEM = ITEMS.register("starry_light_block",()->new StarryLightBlockItem(BlockInit.STARRY_LIGHT_BLOCK.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> TABLE_BLOCK_ITEM = ITEMS.register("table_block",()->new TableBlockItem(BlockInit.TABLE_BLOCK.get(),new Item.Properties().stacksTo(1)));
     public static final RegistryObject<Item> CHAIR_BLOCK_ITEM = ITEMS.register("chair_block",()->new ChairBlockItem(BlockInit.CHAIR_BLOCK.get(),new Item.Properties().stacksTo(1)));
+
+   // public static final RegistryObject<Item> MUSIC_DISC_BOOCHI = ITEMS.register("music_disc_bocchi",()->new MusicDiscItem(,new Item.Properties().stacksTo(1)));
+   // public static final Item MUSIC_DISC_13 = registerItem("music_disc_13", new RecordItem(1, SoundEvents.MUSIC_DISC_13, (new Item.Properties()).stacksTo(1).rarity(Rarity.RARE), 178));
+
 
     public static final RegistryObject<Item> TEST_BLOCK_ITEM = ITEMS.register("test_block", () -> new BlockItem(BlockInit.TEST_BLOCK.get(), new Item.Properties()));
     public static final RegistryObject<Item> CHESSBOARD_BLOCK_ITEM = ITEMS.register("chessboard_block", () -> new BlockItem(BlockInit.CHESSBOARD_BLOCK.get(), new Item.Properties().stacksTo(64)));
