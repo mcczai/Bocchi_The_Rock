@@ -5,7 +5,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -20,7 +19,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.stream.Stream;
 
-public class CanBlock extends HorizontalDirectionalBlock {
+public class CanBlock extends Block {
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
 
     public CanBlock(Properties properties) {
@@ -83,7 +82,7 @@ public class CanBlock extends HorizontalDirectionalBlock {
     @Override
     public RenderShape getRenderShape(BlockState state){
 
-        return RenderShape.ENTITYBLOCK_ANIMATED;
+        return RenderShape.MODEL;
 
     }
 

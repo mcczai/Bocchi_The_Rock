@@ -1,14 +1,6 @@
 {
   "credit": "Made with Blockbench",
   "parent": "builtin/entity",
-  "texture_size": [
-    128,
-    128
-  ],
-  "textures": {
-    "bone": "bocchitherock:block/drum",
-    "particle" : "bocchitherock:block/yamaha"
-  },
   "display": {
     "thirdperson_righthand": {
       "scale": [
@@ -27,8 +19,8 @@
     "firstperson_righthand": {
       "translation": [
         0,
-        -1.5,
-        3.5
+        0,
+        1.5
       ],
       "scale": [
         0.4,
@@ -39,8 +31,20 @@
     "firstperson_lefthand": {
       "translation": [
         0,
-        -1.5,
-        3.5
+        0,
+        1.5
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "ground": {
+      "translation": [
+        0,
+        -3,
+        0
       ],
       "scale": [
         0.4,
@@ -49,22 +53,39 @@
       ]
     },
     "gui": {
+      "rotation": [
+        40,
+        134,
+        0
+      ],
       "translation": [
         0,
-        -6.5,
+        -3,
         0
       ],
       "scale": [
-        0.55,
-        0.55,
-        0.55
+        0.4,
+        0.4,
+        0.4
+      ]
+    },
+    "head": {
+      "translation": [
+        0,
+        7.5,
+        2.5
       ]
     },
     "fixed": {
       "translation": [
         0,
-        -7.25,
-        -11
+        -3,
+        0
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
       ]
     }
   }

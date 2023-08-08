@@ -22,7 +22,7 @@
   "block.bocchitherock.starry_light_block": "“STARRY”发光灯牌",
   "block.bocchitherock.table_block": "桌子",
   "block.bocchitherock.chair_block": "椅子",
-  "block.bocchitherock.can_block": "垃圾桶(模型丢失先别用)",
+  "block.bocchitherock.can_block": "垃圾桶",
   "block.bocchitherock.chessboard_block": "黑白棋盘方块地板",
 
 
@@ -32,6 +32,7 @@
 
   "net.mcczai.tooltip.box_and_armor": "可以通过合成在头盔和方块间切换",
   "net.mcczai.tooltip.guitar_support": "可以把吉他放上去(不要放奇怪的东西上去啊喂！)",
+  "net.mcczai.tooltip.can_block": "可以套在头上(?)",
   "component.bocchitherock.guitar_support": "吉他架"
 
 
