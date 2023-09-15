@@ -3,7 +3,7 @@ package net.mcczai.bocchitherock.block.guitarsupport;
 import com.mojang.logging.LogUtils;
 import net.mcczai.bocchitherock.Init.BlockEntities;
 import net.mcczai.bocchitherock.network.ItemStackSyncS2CPacket;
-import net.mcczai.bocchitherock.network.MessgesInit;
+import net.mcczai.bocchitherock.network.MessagesInit;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
@@ -37,10 +37,10 @@ public class GuitarSupportEntity extends RandomizableContainerBlockEntity implem
         @Override
         protected void onContentsChanged(int slot) {
             setChanged();
-            if (!level.isClientSide()){
-                MessgesInit.sendToClients(new ItemStackSyncS2CPacket(itemHandler,worldPosition));
+            /*if (!level.isClientSide()){
+                MessagesInit.sendToClients(new ItemStackSyncS2CPacket(this,worldPosition));
                 LOGGER.info("S2C Messges off");
-            }
+            }*/
         }
     };
     private ItemStack stack = ItemStack.EMPTY;
@@ -77,10 +77,6 @@ public class GuitarSupportEntity extends RandomizableContainerBlockEntity implem
     protected void saveAdditional(CompoundTag compoundTag) {
         super.saveAdditional(compoundTag);
         compoundTag.put("Inventory", itemHandler.serializeNBT());
-        /*if (!level.isClientSide()){
-            MessgesInit.sendToClients(new ItemStackSyncS2CPacket(itemHandler,worldPosition));
-            LOGGER.info("S2C Messges off");
-        }*/
     }
 
     @Override
@@ -170,6 +166,19 @@ public class GuitarSupportEntity extends RandomizableContainerBlockEntity implem
     public ItemStack getStack() {
         return stack;
     }
+
+    public ItemStack getRenderStack() {
+        ItemStack stack;
+
+        if(!itemHandler.getStackInSlot(2).isEmpty()) {
+            stack = itemHandler.getStackInSlot(2);
+        } else {
+            stack = itemHandler.getStackInSlot(1);
+        }
+
+        return stack;
+    }
+
 
 
 }

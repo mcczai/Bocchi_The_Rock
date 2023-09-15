@@ -12,6 +12,8 @@ version="${mod_version}" #mandatory
 
 displayName="Bocchoi The Rock!" #mandatory
 
+logoFile="logo.png"
+
 authors="${mod_authors}" #optional
 
 description='''${mod_description}'''
