@@ -3,9 +3,6 @@ package net.mcczai.bocchitherock.block.guitarsupport;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.stats.Stats;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.Container;
 import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
@@ -76,16 +73,14 @@ public class GuitarSupportBlock extends BaseEntityBlock {
     @Override
     public @NotNull InteractionResult use(@NotNull BlockState state, @NotNull Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result)
     {
-        if(level.isClientSide()){
-            return InteractionResult.SUCCESS;
-        }
-        else {
-            BlockEntity blockEntity = level.getBlockEntity(pos);
-            if (blockEntity instanceof GuitarSupportEntity){
-                player.openMenu((GuitarSupportEntity)blockEntity);
-                player.awardStat(Stats.OPEN_BARREL);
+        BlockEntity blockEntity = level.getBlockEntity(pos);
+        if (blockEntity instanceof GuitarSupportEntity guitarSupportEntity){
+            if (!level.isClientSide){
+                guitarSupportEntity.addItem(player.getMainHandItem());
+                return InteractionResult.SUCCESS;
             }
         }
+
         return InteractionResult.CONSUME;
     }
 
@@ -101,11 +96,4 @@ public class GuitarSupportBlock extends BaseEntityBlock {
         }
     }
 
-    @Override
-    public void tick(@NotNull BlockState blockState, @NotNull ServerLevel level, BlockPos pos, RandomSource source) {
-        BlockEntity blockEntity = level.getBlockEntity(pos);
-        if(blockEntity instanceof GuitarSupportEntity guitarSupportEntity){
-            guitarSupportEntity.recheckOpen();
-        }
-    }
 }

@@ -13,7 +13,6 @@ import net.mcczai.bocchitherock.block.table.TableBlockRenderer;
 import net.mcczai.bocchitherock.block.tltsoundbox.TltSoundBoxRenderer;
 import net.mcczai.bocchitherock.block.yamaha.YamahaRenderer;
 import net.mcczai.bocchitherock.entity.DrumSitRenderer;
-import net.mcczai.bocchitherock.network.MessagesInit;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
@@ -45,11 +44,11 @@ public class bocchitherock {
 
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event) {
+    /*private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
         });
         MessagesInit.register();
-    }
+    }*/
 
     @Mod.EventBusSubscriber(modid = ID,bus = Mod.EventBusSubscriber.Bus.MOD,value = Dist.CLIENT)
     public static class ClientModEvents{
